@@ -1,10 +1,4 @@
-import random
+import pandas as pd
 
-name = ("Sandi", "Maureen" , "Laureen")
-
-names = input("Name to choose are Sandi, Maureen or Laureen: ")
-
-if names in name:
-    print("you win")
-else:
-    print("you lose")
+df = pd.read_excel("Obiski EQ lokacij 2025.xlsx")
+print(df)
